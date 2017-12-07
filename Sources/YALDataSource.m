@@ -16,7 +16,7 @@
 
 -(void)updateDataBack:(DatabackBlock)backBlock{
     _dataOrigin = [NSMutableArray arrayWithObjects:@"YALTableViewDataSource",@"by Iwiii 请继承YAL类 并重写相应方法",@"...", nil];
-    _dataOutput = [YALPolicyMethod outPutArrayFromArray:_dataOrigin];
+    _dataOutput = [_dataOrigin copy];
     backBlock(_dataOutput);
 }
 @end
