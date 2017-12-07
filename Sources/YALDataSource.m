@@ -7,7 +7,6 @@
 //
 
 #import "YALDataSource.h"
-#import "YALPolicyMethod.h"
 @interface YALDataSource()
 @property (nonatomic,copy,readonly) NSMutableArray *dataOrigin;
 @property (nonatomic,copy,readonly) NSArray *dataOutput;
