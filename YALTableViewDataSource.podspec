@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "YALTableViewDataSource"
-  s.version      = "0.0.1"
+  s.version      = "0.0.4"
   s.summary      = "A pattern for tableViewDataSource protocol to reduce the codes in a large Controller"
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -24,7 +24,15 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                           datasource dataSource A pattern for tableViewDataSource protocol to reduce the codes in a large Controller
+                         YAL
+                         YALTableView
+                         TableViewDataSource
+                         YALTableViewDataSource
+                         YALTableViewDatasource
+                         YALTableViewdatasource
+                         YALTableviewdatasource
+                         YALtableviewdatasource
+                         yal
                    DESC
 
   s.homepage     = "https://github.com/Iwiii/YALTableViewDataSource.git"
@@ -64,7 +72,7 @@ Pod::Spec.new do |s|
   #
 
    s.platform     = :ios
-  # s.platform     = :ios, "5.0"
+   s.platform     = :ios, "5.0"
 
   #  When using multiple platforms
   # s.ios.deployment_target = "6.0"
