@@ -6,7 +6,7 @@ you'd better inherit the two class `YALDataManager` and `YALDataSource` and impl
 
 
 ## structrue
-###YALDataManager
+### YALDataManager
 ```objc
     self.dataSource = [YALDataSource new];
     self.dataManager = [[YALDataManager alloc] initWithDataSource:self.dataSource cellIdentifier:@"cell" ];
@@ -19,6 +19,6 @@ when you want to reload Data you can code :
         [weakSelf.tableView reloadData];
     }];
 ```
-###YALDataSource
+### YALDataSource
 do anything which you should do for data in this class
-一个从TableViewDataSource出发的框架,给Controller减负,同时独立View层和Model层
+
