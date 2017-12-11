@@ -11,6 +11,6 @@
 
 typedef void (^DatabackBlock)(NSArray * array);
 @interface YALDataSource : NSObject
-//使用时 防止循环引用,小心内存泄漏
+//be careful of retain cyle
 -(void)updateDataBack:(DatabackBlock)backBlock;
 @end

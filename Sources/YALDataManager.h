@@ -31,6 +31,8 @@ typedef void (^HaveGottenDataBlock)(void);
 
 //如果Tableview的数据由Controller管理 那么用这个建立DataManager
 -(instancetype) initWithItems:(NSArray*)anItems cellIdentifier:(NSString*)cellIdentifier;
+
+
 -(void)getNewData:(NSArray *) newData;
 
 

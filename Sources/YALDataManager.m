@@ -12,7 +12,7 @@
 @interface YALDataManager()<UIToolbarDelegate>
 @property (nonatomic,copy) NSArray *items;
 @property (nonatomic,copy) NSString*cellIdentifier;
-@property (nonatomic,weak) YALDataSource *dataSource;//防止循环引用,这里dataSource是从Controller来的所以用弱引用
+@property (nonatomic,weak) YALDataSource *dataSource;//avoid retain cycle use weak
 @end
 @implementation YALDataManager
 
@@ -72,7 +72,7 @@
     if (self.dataSource == nil) {
         @throw [NSException exceptionWithName:@"WRONG CODING" reason:@"the property dataSource is nil ! please review your code soon. or you may want to use the method getNewData:" userInfo:nil];
     }
-    //线程问题,要保证下载数据完成后 让controller刷新
+    //Thread problem, make sure that the controller is refreshed after the downloading data is completed
    // __block NSArray *arr = self.items;
     [self.dataSource updateDataBack:^(NSArray *array) {
         self.items = array;

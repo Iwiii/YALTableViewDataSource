@@ -15,7 +15,7 @@
 @implementation YALDataSource
 
 -(void)updateDataBack:(DatabackBlock)backBlock{
-    _dataOrigin = [NSMutableArray arrayWithObjects:@"YALTableViewDataSource",@"by Iwiii 请继承YAL类 并重写相应方法",@"...", nil];
+    _dataOrigin = [NSMutableArray arrayWithObjects:@"YALTableViewDataSource",@"by Iwiii Please inherit the YAL class and rewrite the corresponding method",@"...", nil];
     _dataOutput = [_dataOrigin copy];
     backBlock(_dataOutput);
 }
